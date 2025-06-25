@@ -16,7 +16,7 @@ def chat():
     if not user_message:
         return "⚠️ No message provided."
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={API_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
     headers = {"Content-Type": "application/json"}
     data = {
         "contents": [
